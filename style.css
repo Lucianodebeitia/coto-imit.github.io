@@ -875,9 +875,9 @@ label span {
 .navbar ul {
    background: white;
    width: 100%;
-   height: 70vh;
+   height: 75vh;
    position: absolute;
-   top: 50px;
+   top: 55px;
    right: 0.2px;
    flex-direction: column;
    align-items: center;
@@ -903,7 +903,7 @@ label span {
     }
 
     #carrusel-img {
-        height: 27vh;
+        height: 25rem!important;
         width: 100%;
     }
 
