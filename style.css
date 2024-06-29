@@ -870,7 +870,7 @@ label span {
 
 /* ! Comenzamos a optimizar el sitio Web para dispositivos Mobiles. */
 
-@media (max-width: 1100px) {
+@media (max-width: 800px) {
 
 .navbar ul {
    background: rgb(255, 255, 255);
