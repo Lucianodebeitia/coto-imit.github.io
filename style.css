@@ -1267,7 +1267,7 @@ label span {
 }
 
 header {
-    justify-content: space-evenly
+    justify-content: space-between;
 }
 
 }
