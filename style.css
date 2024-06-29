@@ -1266,6 +1266,10 @@ label span {
     height: 22rem;
 }
 
+header {
+    justify-content: space-evenly
+}
+
 }
     
 
