@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <img class="icon_coto" src="imgs/icon-coto.jpg" alt="">
+        <nav class="navbar">
+            <!-- ? Menu hamburguesa. -->
+            <input type="checkbox" id="toggle-menu">
+            <label for="toggle-menu" class="bars-menu">
+                <span>
+
+                </span>
+                <span>
+
+                </span>
+                <span>
+
+                </span>
+            </label>
+            <ul class="navbar_List">
+                <li><a href=""></a>OFERTAS</li>
+                <li><a href=""></a>DESCUENTOS</li>
+                <li><a href=""></a>SUCURSALES</li>
+                <li><a href=""></a>INSTITUCIONAL</li>
+                <li><a href=""></a>ACUERDO AYMA</li>
+                <button class="btn_coto_digital">COTO DIGITAL <i class="fa-solid fa-cart-shopping"></i></button>
+            </ul>
+        </nav>
+    </header>
+    <section class="section_products">
+        <div class="contenedor">
+            <button class="boton back">&#60;</button>
+
+            <img id="carrusel-img" src="imgs/promos.jpg" alt="Imagen del carrusel">
+            <button class="boton next">&#62;</button>
+        </div>
+        <div class="box_gif">
+    <img class="gif" src="imgs/zocalo-digital.gif" alt="">
+    </div>
+    </section>
+    
+    <section class="section_ofertas">
+    <div class="container">
+        <div class="ofertas-1">
+        <h2 class="tittle_ofertas">Ofertas & Catálogo</h2>
+    </div>
+        <div class="carousel">
+            <button id="prev" class="nav">←</button>
+            <div class="carousel-images">
+                <img src="imagenes_catalogo/catalogo_precios.jgp.jpg" class="carousel-image active" alt="Oferta 1">
+                <img src="imagenes_catalogo/catalogo_precios.jpg" class="carousel-image" alt="Oferta 2">
+                <img src="imagenes_catalogo/catalogo_precios2.jpg" class="carousel-image" alt="Oferta 3">
+                <img src="imagenes_catalogo/ofertas_catalogo6.jpg" class="carousel-image" alt="Oferta 4">
+                <img src="imagenes_catalogo/ofertas_catalogo5.jpg" class="carousel-image" alt="Oferta 4">
+                <img src="imagenes_catalogo/ofertas_catalogo4.jpg" class="carousel-image" alt="Oferta 4">
+                <img src="imagenes_catalogo/ofertas_catalogo3.jpg" class="carousel-image" alt="Oferta 4">
+                <img src="imagenes_catalogo/ofertas_catalogo2.jpg" class="carousel-image" alt="Oferta 4">
+                <img src="imagenes_catalogo/ofertas_catalogo2.jpg" class="carousel-image" alt="Oferta 4">
+                <img src="imagenes_catalogo/Afiche-Rincon-Patrio-10-Motivo-1.jpg" class="carousel-image" alt="Oferta 4">
+                <img src="imagenes_catalogo/Afiche-Rincon-Patrio-10-Motivo-2.jpg" class="carousel-image" alt="Oferta 4">
+                <img src="imagenes_catalogo/AficheDigitalOfertasBazar17.jpg" class="carousel-image" alt="Oferta 4">
+                <img src="imagenes_catalogo/AficheRenova13.jpg" class="carousel-image" alt="Oferta 4">
+                <img src="imagenes_catalogo/ofertas_catalogo5.jpg" class="carousel-image" alt="Oferta 4">
+            </div>
+            <button id="next" class="nav">→</button>
+        </div>
+    </div>
+    </section>
+
+    <!-- ? Comienza 'seccion ofertas y catalogo' para dispositivos mobiles -->
+    <section class="section_ofertas_mobile">
+        <div class="carousel-container">
+            <div class="carousel" id="carousel">
+              <div class="carousel-slide current" style="background-image: url('imagenes_catalogo/ofertas_catalogo4.jpg');"></div>
+              <div class="carousel-slide" style="background-image: url('imagenes_catalogo/Medio-Afiche-Pesca-Motivo-2-Lunes-17.jpg');"></div>
+              <div class="carousel-slide" style="background-image: url('imagenes_catalogo/catalogo_precios.jgp.jpg');"></div>
+              <!-- Agrega más slides según sea necesario -->
+            </div>
+            
+    </section> 
+  <!-- ? Termina la seccion. -->
+
+    <div class="box_legales">
+    <p class="texto_info">PARA MÁS INFORMACION Y CONDICIONES O LIMITACIONES APICABLES, CONSULTE EN "LEGALES DE COTO EN COTO.COM.AR/LEGALES"</p>
+    </div>
+
+    <!-- ? Seccion PROMOS TARJETAS -->
+<section class="sec_promos">
+    <div class="box_text_proms">
+    <h3 class="tittle_promotions">SELECCIONÁ EL DÍA PARA VER LAS PROMOS</h3>
+</div>
+<div class="buttons-container">
+    <button onclick="showPromotions(1)">Lunes</button>
+    <button onclick="showPromotions(2)">Martes</button>
+    <button onclick="showPromotions(3)">Miércoles</button>
+    <button onclick="showPromotions(4)">Jueves</button>
+    <button onclick="showPromotions(5)">Viernes</button>
+    <button onclick="showPromotions(6)">Fin De Semana</button>
+</div>
+<div class="promotions-container" id="promotions-container">
+    <!-- Las promociones se cargarán aquí dinámicamente -->
+</div>
+</section>
+<!-- ? Termina la seccion promos -->
+
+    <div class="box_comunidad">
+        <h3 class="text_previo_video">PARA MAS INFORMACION Y CONDICIONES O LIMITACIONES APICABLES, CONSULTE "LEGALES COTO" EN COTO.COM.AR/LEGALES</h3>
+        <img class="comunidad_coto_img-portada" src="imagenes_catalogo/comunidad_coto.jpg" alt="">
+    </div>
+
+    <section class="section_video">
+        <div class="box_video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kTRLI7f1zMA" title="► COTO: cuando una empresa exporta, un país crece 🇦🇷🇦🇷🇦🇷" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+            <div class="text_video">
+              <p class="text_one_section-video">NUEVO VIDEO INSTITUCIONAL</p>
+              <h3 class="h3_section-video">CUANDO UNA EMPRESA EXPORTA, UN PAIS CRECE.</h3>
+              <p class="text_two_section_video">Con mas de 50 años, Coto es mucho más que un supermercado. Es una empresa argentina que exporta al mundo.</p>
+              <div class="box-button-video">
+              <button class="button_video">DESCUBRÍ COTO</button>
+              </div>
+
+            </div>
+    </section>
+
+    <main class="main_comunidades">
+    <div class="fixed-background">
+        <div class="content-overlay">
+            <img class="logo_coto2" src="imgs/icon-coto.jpg" alt="">
+        <p class="texto_empresa">Una empresa 100% Argentina.</p>
+        <div class="logos-container">
+            <img src="logos_comunidad/comunidad-foto.jpg" alt="Logo 1">
+            <img src="logos_comunidad/coto-empleos.png" alt="Logo 3">
+            <img src="logos_comunidad/date-credito-tci.png" alt="Logo 3">
+            <img src="logos_comunidad/imagen-coto-digital.png" alt="Logo 3">
+            <img src="logos_comunidad/locales&espacios_comercios.png" alt="Logo 2">
+            <img src="logos_comunidad/zona.jpg" alt="Logo 3">
+            <!-- Añade más logos según sea necesario -->
+        </div>
+        </div>
+    </div>
+</main>
+
+<section class="section_estafas">
+   <div class="box_alerta_estafas">
+    <img class="img_alerta" src="imgs/logo_atencion.png" alt="">
+   </div>
+    <div class="texto_estafas">
+        <h3 class="h3_estafas">ALERTA POR ESTAFAS</h3>
+        <p class="texto1_estafas">Hemos verificado individuos que haciendose pasar por personal de la empresa realizan diferentes modalidades de esrafas. Desde COTO queremos avisarte que jamas te contactaremos para solicitarte datos bancarios ni pagos para participar en sorteos o acceder a beneficios o pormociones.</p>
+        <p class="texto2_estafas">Ante cualquier sospecha o duda, contactate directamente con nuestro</p>
+        <h3 class="h3-2_estafas">Centro de Atencion al Cliente: 0800-888-4848</h3>
+        <p class="texto3_estafas">O escribinos en nuestras redes sociales.</p>
+    </div>
+
+   </div>
+</section>
+
+
+
+<footer>
+    <div class="box_footer">
+    <img class="icon_coto_footer" src="imgs/icon-coto.jpg" alt="">
+    <div>
+        <!-- * footer para dispositivos mobiles. -->
+            <div class="footer_mobile">
+                <h2>LINKS DE INTERÉS: </h2>
+                <ul class="list_footer_mobile"
+                    <li><a href="">Ofertas</a></li>
+                    <li><a href="">Descuentos</a></li>
+                    <li><a href="">Sucursales</a></li>
+                    <li><a href="">Institucionales</a></li>
+                    <li><a href="">Comunidad Coto</a></li>
+                    <li><a href="">Coto Digital</a></li>
+                    <li><a href="">Trabaja en Coto</a> </li>
+                    <li><a href="">Recetas</a></li>
+                    <li><a href="">Tarjetas TCI</a> </li>
+                    <li><a href="">Zona E</a></li>
+                    <li><a href="">Locales y Espacios</a></li>
+                    <li><a href="">Posventa Electro</a></li>
+                    <li><a href="">Medios de pago</a></li>
+                    <li><a href="">Our Company</a></li>
+                    <li><a href="">中文</a></li>
+                </ul>
+            </div>
+        <!-- * termina el footer para mobiles. -->
+        <ul class="list_footer">
+            <li><a href=""></a><p>Ofertas</p></li>
+            <li><a href=""></a><p>Descuentos</p></li>
+            <li><a href=""></a><p>Sucursales</p></li>
+            <li><a href=""></a><p>Institucional</p></li>
+            <li><a href=""></a><p>Comunidad Coto</p></li>
+            <li><a href=""></a> <p>Coto Digital</p></li>
+            <li><a href=""></a><p>Trabaja en Coto</p></li>
+            <li><a href=""></a><p>Recetas</p></li>
+            <li><a href=""></a><p>Tarejeta TCI</p></li>
+            <li><a href=""></a><p>Zona E</p></li>
+            <li><a href=""></a><p>Locales y Espacios</p></li>
+            <li><a href=""></a><p>Posvento Electro</p></li>
+            <li><a href=""></a><p>Medios de pago</p></li>
+            <li><a href=""></a><p>Our Company</p></li>
+            <li><a href=""></a> <p>中文</p></li>
+        </ul>
+        
+       
+    </div>
+    <div class="info_footer">
+        <h3>CONTACTO:</h3>
+        <p>COTO C.I.C.S.A.</p>
+        <p>Paysandú 1842 - C1416CDP</p>
+        <p>Ciudad Autónoma de Buenos Aires - Argentina.</p>
+        <a href=""><p>Escribinos aquí</p></a>
+        <p>Atención telefónica:</p>
+        <p class="info_number"><i class="fa-solid fa-phone"></i>0800-888-4848</p>
+        <p>Lunes a Sábados de 8 a 19hs.</p>
+    </div>
+    <div>
+        <h3>SEGUINOS EN NUESTRAS REDES</h3>
+        <div class="box-img">
+            <img class="logos_footer" src="logos_comunidad/logo_fb.jpg" alt="">
+            <img class="logos_footer" src="imgs/logoyt-removebg-preview.png" alt="">
+            <img class="logos_footer" src="logos_comunidad/logo-instagram.jpg" alt="">
+            <img class="logos_footer" src="imgs/logo-linkedin-removebg-preview.png" alt="">
+        </div>
+        <div class="box_botones">
+        <button class="btn-footer">Boton de arrepentimiento</button>
+        <button class="btn-footer">Boton de baja</button>
+        </div>
+    </div>
+    </div>
+    
+    <div class="box_info_footer">
+        <div class="box_one">
+         <p>Canales de contacto oficiales</p>
+         <button>VER CANALES</button>
+        </div>
+
+        <div class="box_two">
+         <p>Atencion al cliente de Coto Digital</p>
+         <button><i class="fa-brands fa-whatsapp"></i>+54 9 1126412851</button>
+        </div>
+    </div>
+
+    <!-- ? Creamos la secion de defensas al consumidor. -->
+
+    <div class="section_consumidor">
+        <img src="defensas-al-consumidor/defensas-del-consumidor.jpg" alt="">
+        <img src="defensas-al-consumidor/defensas-al-consumidor.jpg" alt="">
+        <img src="defensas-al-consumidor/defensas-del-consumidor(verde).jpg" alt="">
+        <img src="defensas-al-consumidor/defensa-del-consumidor-mendoza.jpg" alt="">
+        <img src="defensas-al-consumidor/defensas-al-consumidor-santa-fe.jpg" alt="">
+        <img src="defensas-al-consumidor/er.jpg" alt="">
+    </div>
+    <div class="proteccion_consumidor_img">
+    <img src="defensas-al-consumidor/protencion-al-consumidor-neuquen.jpg" alt="">
+    <p class="text_consumidor">COTO C.I.C.S.A. CUIT: 30-54808315-6 - Nombre comercial: COTO - www.coto.com.ar.
+        Paysandú 1842 - C1416CDP - Ciudad Autónoma de Buenos Aires - Argentina.
+        Correo electrónico de servicio de atención al consumidor: Info@coto.com.ar.
+        Defensa de las y los Consumidores. Para reclamos: <a class="ingrese_aqui" href="">Ingrese aquí</a></p>
+</div>
+</footer>
+
+<div class="box_p_derechos">
+    <p>© 2024 Derechos reservados - COTO C.I.C.S.A.</p>
+</div>
+
+<!-- ! -->
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
